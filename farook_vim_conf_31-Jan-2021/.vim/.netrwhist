@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/farook/Desktop/learn/one/resources/views'
+let g:netrw_dirhist_7='/home/farook/Desktop/learn/one/resources'
+let g:netrw_dirhist_6='/home/farook/Desktop/learn/one'
+let g:netrw_dirhist_5='/home/farook/Desktop/learn/one/routes'
+let g:netrw_dirhist_4='/home/farook/Desktop/learn/one'
+let g:netrw_dirhist_3='/home/farook/Desktop/learn/one/resources'
+let g:netrw_dirhist_2='/home/farook/Desktop/learn/one/resources/views'
+let g:netrw_dirhist_1='/home/farook/Desktop/learn/one/resources/views/layouts'
+let g:netrw_dirhist_0='/home/farook/Desktop/learn/one/resources/views'
+let g:netrw_dirhist_9='/home/farook/Desktop/learn/one/resources'
