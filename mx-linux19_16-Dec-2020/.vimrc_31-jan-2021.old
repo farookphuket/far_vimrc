@@ -123,55 +123,9 @@ set hlsearch
 " When I close a tab, remove the buffer
 set nohidden
 
-
-set noswapfile
- 
-set nobackup
- 
-set undodir=~/.vim/undodir
- 
-set undofile
-
-
-" Give more space for displaying messages.
- set cmdheight=2
- 
- " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
- 
- " delays and poor user experience.
- 
- set updatetime=50
-
-
-
-" Don't pass messages to |ins-completion-menu|.
- 
- set shortmess+=c
- 
-set hlsearch 
- 
- set colorcolumn=80
- 
- highlight ColorColumn ctermbg=0 guibg=red
- 
-
 " Set off the other paren
-"highlight MatchParen ctermbg=4
+highlight MatchParen ctermbg=4
 "
-
-if executable('rg')
-     
-    let g:rg_derive_root='true'
-     
-endif
-     
-                                                                                                                
-     
-let loaded_matchparen = 1
-
-
-let hlstate = 0
-nnoremap <c-c> :if (hlstate%2 == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=hlstate+1    <cr>
 
 "Look and Feel
 
@@ -179,26 +133,18 @@ nnoremap <c-c> :if (hlstate%2 == 0) \| nohlsearch \| else \| set hlsearch \| end
 " nochem error: color scheme not found
 "
 "if has("gui_running")
-"    "colorscheme inkpot
-"    colorscheme monokai
-""" Remove Toolbar
-""set guioptions-=T
-"""Terminus is AWESOME
-""set guifont=Terminus\ 9
+"colorscheme inkpot
+"" Remove Toolbar
+"set guioptions-=T
+""Terminus is AWESOME
+"set guifont=Terminus\ 9
 "else
-"    colorscheme metacosm
+"colorscheme metacosm
 "endif
-
-" set Spacebar key as the leader key                                                                       
-let mapleader = " "
-
-
-
-
 
 "Status line gnarliness
 set laststatus=2
-set statusline=%{fugitive#statusline()}%F%m%r%h%w\ (%{&ff}){%Y}\ [%l,%v][%p%%]
+"set statusline=%{fugitive#statusline()}%F%m%r%h%w\ (%{&ff}){%Y}\ [%l,%v][%p%%]
 
 "Functions
 
@@ -285,33 +231,7 @@ nnoremap <silent> <C-Right> :tabnext<CR>
 nnoremap <silent> <C-Left> :tabprevious<CR>
 
 " New Tab
-"nnoremap <silent> <C-t> :tabnew<CR>
-
-"toggle NERDTree press Control+t to toggle NERDTree
-map <C-t> :NERDTreeToggle<CR>
-
-
-
-nnoremap <leader>h :wincmd h<CR>
-
-nnoremap <leader>j :wincmd j<CR>
-
-nnoremap <leader>k :wincmd k<CR>
-
-nnoremap <leader>l :wincmd l<CR>
-
-"nnoremap <leader>u :UndotreeShow<CR>
-
-
-nnoremap <Leader>+ :vertical resize +5<CR>
-
-nnoremap <Leader>- :vertical resize -5<CR>
-
-nnoremap <Leader>rp :resize 100<CR>
-
-
-
-
+nnoremap <silent> <C-t> :tabnew<CR>
 
 " Rotate Color Scheme <F8>
 " nnoremap <silent> <F8> :execute RotateColorTheme()<CR>
@@ -391,7 +311,6 @@ let g:Tex_ViewRule_pdf = "kpdf"
 filetype plugin indent on
 syntax on
 
-:colorscheme monokai
 "Open new split panes to right and bottom, which feels more natural than Vim’s default:
 
 set splitbelow
@@ -399,129 +318,83 @@ set splitright
 
 
 "set the runtime path to include Vundle and initialize
-"set rtp+=~/.vim/bundle/Vundle.vim
-"call vundle#begin()
-
-call plug#begin('~/.vim/plugged')
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle, required
-"Plugin 'gmarik/Vundle.vim'
+Plugin 'gmarik/Vundle.vim'
 "
 " " The following are examples of different formats supported.
-" " Keep Plug commands between vundle#begin/end.
+" " Keep Plugin commands between vundle#begin/end.
 " " plugin on GitHub repo
-
-Plug 'neoclide/coc.nvim', {'branch': 'release'} 
-
-
-
-"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-
-Plug 'junegunn/fzf.vim'
-
-
-
-Plug 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 
 " hit gc to comment
-Plug 'tpope/vim-commentary'
-Plug 'tomtom/tcomment_vim'
+Plugin 'tpope/vim-commentary'
+Plugin 'tomtom/tcomment_vim'
 
 
 " Puppet syntax
-Plug 'rodjek/vim-puppet'
+Plugin 'rodjek/vim-puppet'
 
 " version control gutter (works with git)
-Plug 'airblade/vim-gitgutter'
+Plugin 'airblade/vim-gitgutter'
 
 " Seamlessly navigate between tmux and vim panes
-Plug 'christoomey/vim-tmux-navigator'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " Python Linter
-"Plug 'nvie/vim-flake8'
+Plugin 'nvie/vim-flake8'
 
 " status bar that rocks
-"Plug 'bling/vim-airline'
+"Plugin 'bling/vim-airline'
 
 " vim auto pair 21-Sep-2019
-Plug 'jiangmiao/auto-pairs'
+Plugin 'jiangmiao/auto-pairs'
 
 
+" snipmate 21-Sep-2019
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+
+" Optional:
+Plugin 'honza/vim-snippets'
 
 " vimairline
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 
 " sparkup
-Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " add php auto complete 13-Sep-2019
-Plug 'shawncplus/phpcomplete.vim'
+Plugin 'shawncplus/phpcomplete.vim'
 " SuperTap 14-Sep-2019
-Plug 'ervandew/supertab'
+Plugin 'ervandew/supertab'
 
 " multi cursor 23-Sep-2019
-Plug 'terryma/vim-multiple-cursors'
+Plugin 'terryma/vim-multiple-cursors'
 
 
 " NERDTree 24-Sep-2019
-Plug 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 
 " Just markdown 10 Oct 2019 Laptop
-Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 
-"call vundle#end() " required
-call plug#end()
+call vundle#end() " required
+
 
 
 " Show the under line when cursor in focus
  set cursorline
 
 
-" this key binding will not work if you don't have gvim install!                
-" copy to system clipboard in Vitual Mode                                                                  
-" to paste from system clipboard use Control+Shift+v                            
-vmap <C-y> "+y                                                                  
-" map key Control+y for copy from vim to system clipboard on 16-July-2020        
-" IMPORTANT!! please Install GVim in order to make the above key binding work   
-                                                                                 
-                                                                                 
-                                                                                 
-" easy paste long text from clipboard                                           
-nnoremap <leader>pp "+p 
-
-nnoremap <leader>cr :CocRestart
-
-
-" show the buffers list
-nnoremap <Leader>ll :ls<CR>
-
-
-
-
-" open vertical split
-nnoremap <Leader>vsp :vsp<CR>
-
-
-" open horizontal split
-nnoremap <Leader>sp :sp<CR>
-
-
-
-nnoremap <Leader>pf :Files<CR>
-
-
-
-let g:netrw_browse_split = 4
-
-let g:netrw_banner = 0
-
-let g:netrw_winsize = 22
-map <leader>t :Lexplore<CR>
 
 " Map the <Space> key to toggle a selected fold opened/closed.
-" nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
-" vnoremap <Space> zf
+ nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
+ vnoremap <Space> zf

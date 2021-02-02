@@ -222,7 +222,7 @@ Plug 'mbbill/undotree'
 
 Plug 'sheerun/vim-polyglot'
 
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 Plug 'junegunn/fzf.vim'
 

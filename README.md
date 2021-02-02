@@ -148,44 +148,6 @@
 
 
 
-
-##  1 Feb 2021 
-
->   BIG file size I pull this repo and this bad because it took too long 
->   the big file size is the history from git and to me "HISTORY" is not
->   important! not with this config file that I make for my personal use 
->   computer so it's fine to remove them all so when I know that the
->   file size to clone has to be completely small is my goal for this 
->   today I made it what I have done is 
-
-
-1.  I just make sure that the git branch has just one(in my case is Master)
-
-2.  on my local compute I type "git init" then I rename the branch to main 
-by using the command "git branch -m main" now I add this repo 
-" git remote add origin git@github.com:farookphuket/far_vimrc.git" 
-
-3.  add file to the just create branch "git add ." then commit 
-"git commit -m"message to commit" " then push to this branch.
-
-
-4.  go to the github now set the branch "main" as a default branch 
-
-5.  push this new branch that just create "git push -u origin main "
-
-
-###     That's all! now will be more faster to pull
-
->   so now I am a happy boy
-
-
-
-
-
-
-
-
-
 ---
 
 ##  Date 26 Jan 2021

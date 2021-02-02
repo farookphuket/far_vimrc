@@ -91,7 +91,6 @@ fi
 alias ll='ls -la'
 alias la='ls -A'
 alias l='ls -CF'
-alias cl='clear'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -135,14 +134,3 @@ if [ -f `which powerline-daemon`  ]; then
             . /usr/share/powerline/bindings/bash/powerline.sh
 fi
 
-
-
-# Add Composer bin-dir to PATH if it is installed.
-    command -v composer >/dev/null 2>&1 && {
-    COMPOSER_BIN_DIR=$(composer global config bin-dir --absolute 2> /dev/null)
-    PATH="$PATH:$COMPOSER_BIN_DIR";
-}
-export PATH
-
-
-alias resize='killall VBoxClient && VBoxClient-all'
