@@ -406,9 +406,13 @@ nnoremap <Leader>vsp :vsp<CR>
 nnoremap <Leader>sp :sp<CR>
 
 
+" move visually select lines up or down
+" from Nick Janetakis https://www.youtube.com/watch?v=gNyNm5DsQ88
+nnoremap K :m .-2<CR>==
+nnoremap J :m .+1<CR>==
+vnoremap K :m '<-2<CR>gv=gv
 vnoremap J :m '>+1<CR>gv=gv
 
-vnoremap K :m '<-2<CR>gv=gv
 
 
 
