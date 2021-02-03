@@ -148,7 +148,6 @@ set undofile
  
  set shortmess+=c
  
-set hlsearch 
  
  set colorcolumn=80
  
@@ -173,21 +172,7 @@ let loaded_matchparen = 1
 let hlstate = 0
 nnoremap <c-c> :if (hlstate%2 == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=hlstate+1    <cr>
 
-"Look and Feel
 
-" Favorite Color Scheme
-" nochem error: color scheme not found
-"
-"if has("gui_running")
-"    "colorscheme inkpot
-"    colorscheme monokai
-""" Remove Toolbar
-""set guioptions-=T
-"""Terminus is AWESOME
-""set guifont=Terminus\ 9
-"else
-"    colorscheme metacosm
-"endif
 
 " set Spacebar key as the leader key                                                                       
 let mapleader = " "
@@ -391,7 +376,7 @@ let g:Tex_ViewRule_pdf = "kpdf"
 filetype plugin indent on
 syntax on
 
-:colorscheme monokai
+colorscheme monokai
 "Open new split panes to right and bottom, which feels more natural than Vim’s default:
 
 set splitbelow
@@ -404,18 +389,11 @@ set splitright
 
 call plug#begin('~/.vim/plugged')
 
-" let Vundle manage Vundle, required
-"Plugin 'gmarik/Vundle.vim'
-"
-" " The following are examples of different formats supported.
-" " Keep Plug commands between vundle#begin/end.
-" " plugin on GitHub repo
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'} 
 
 
 
-"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 Plug 'junegunn/fzf.vim'
 
@@ -437,11 +415,6 @@ Plug 'airblade/vim-gitgutter'
 " Seamlessly navigate between tmux and vim panes
 Plug 'christoomey/vim-tmux-navigator'
 
-" Python Linter
-"Plug 'nvie/vim-flake8'
-
-" status bar that rocks
-"Plug 'bling/vim-airline'
 
 " vim auto pair 21-Sep-2019
 Plug 'jiangmiao/auto-pairs'
