@@ -120,6 +120,31 @@
 
 
 
+# Date 3 Feb 2021 
+
+###     vim monokai color scheme baby! 
+
+> I just re-install manjaro KDE 20.2.1 on my desktop and set the new `.vimrc`
+> in the folder `mx-linux19_16-Dec-2020` you will get this color scheme the 
+> color switch on this .vimrc I use is "monokai" download from here 
+> `git clone https://github.com/sickill/vim-monokai.git ` 
+
+
+
+
+
+
+
+[vim_monokai]:https://i.ibb.co/gR7v9Wt/2021-02-03-color-scheme-monokai.png
+
+![vim monokai color scheme][vim_monokai]
+
+
+
+
+<br />
+
+
 #   my laptop use Manjaro kde 
 
 >   Manjaro KDE is the best linux that in my favorite for very long time
