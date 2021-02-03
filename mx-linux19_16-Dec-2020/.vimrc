@@ -446,6 +446,11 @@ Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 
 
+" html tag easy by emmet
+Plug 'mattn/emmet-vim'
+
+
+
 "call vundle#end() " required
 call plug#end()
 
