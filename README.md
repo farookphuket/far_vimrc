@@ -82,7 +82,11 @@
 ##  Nvim Key Bindding
 
 1.  Open nvim type "nvim ." this will open the new Lexplorer now select the 
-file to open then press `<Ctrl+j>` then `:q` 
+file to open then press `<Ctrl+j>` then `:q` (to me I am use-to type vim .
+so I just make an alias to neovim so I put the command `alias vim="nvim ."` 
+to my "~/.bashrc" file this way I just type vim hit enter the neovim will 
+fire-up) 
+
 
 
 
@@ -90,7 +94,8 @@ file to open then press `<Ctrl+j>` then `:q`
 so make sure that you have run the command ":CocInstall coc-explorer" 
 run "PlugUpdate" or "PlugInstall" then press `<Space>+cr+enter` 
 
--   toggle coc-file-explorer press `<Space>+ct` 
+-   toggle coc-file-explorer press `<Space>+ct` (press space follow by ct 
+real quick it's will open coc-explorer to close it press <space-ct> again)
 -   move cursor down press "j" 
 -   move cursor up press "k"
 -   expan the folder(folder with start by the + sign ) press "gl"
