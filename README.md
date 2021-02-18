@@ -72,6 +72,13 @@
 >   so just to remind me in case I forgot this key some time and it's maybe
 >   can be one references too
 
+>   if you use neovim so just copy the folder nvim to "~/.config" 
+>   fire-up nvim press "<Space>cr" hit enter type ":CocInstall coc-explorer" 
+>   coc-explorer is the file browser that we need for this config
+
+
+
+
 ##  Nvim Key Bindding
 
 1.  Open nvim type "nvim ." this will open the new Lexplorer now select the 

@@ -146,3 +146,4 @@ export PATH
 
 
 alias resize='killall VBoxClient && VBoxClient-all'
+alias vim="nvim ."
