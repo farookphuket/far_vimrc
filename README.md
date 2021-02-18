@@ -7,7 +7,11 @@
 
 >   so after you run `git clone https://github.com/farookphuket/far_vimrc.git`
 >   then cd into the folder "far_vimrc" or in your file browser program 
->   press F5 to refresh Linux will hide dot file by default  
+>   you have press "Ctrl+h" to see the "DOT file or Config file"
+>   press F5 to refresh Linux will hide dot file by default so without 
+>   pressing "Ctrl+h" you won't be able to see the dot file
+
+
 
 
 
@@ -15,12 +19,14 @@
 >   year 2021 I am completely using Manjaro on Desktop and Laptop 
 >   I love Ubuntu,Debian,PopOS,Linux Mint,MX Linux and by the way 
 >   I do not hate window because all the computer stuff was giving me an 
->   opportunity the opportunity for me to learn thing and do some stupid mistake
+>   opportunity! the opportunity for me to learn thing and do some stupid mistake
 >   for free.
 
 >   my system is manjaro on both Laptop and pc (to me I felt like I love more 
->   to use manjaro than Ubuntu) this config I have test on Manjaro 20.2 
->   ,Ubuntu 20.04 ,PoP!_OS it is working great!
+>   to use manjaro than Ubuntu) 
+
+>   this config I have test on Manjaro 20.2 
+>   Ubuntu 20.04 ,PoP!_OS it is working great!
 
 
 
@@ -60,16 +66,52 @@
 
 
 
+#   Date 18 Feb 2021 | NVim Only!
+
+>   I just install nvim on 18-Feb-2021 as my first time ever use neovim 
+>   so just to remind me in case I forgot this key some time and it's maybe
+>   can be one references too
+
+##  Nvim Key Bindding
+
+1.  Open nvim type "nvim ." this will open the new Lexplorer now select the 
+file to open then press `<Ctrl+j>` then `:q` 
 
 
 
+2.  file browser (Coc explorer) "Coc explorer" is not install yet!
+so make sure that you have run the command ":CocInstall coc-explorer" 
+run "PlugUpdate" or "PlugInstall" then press `<Space>+cr+enter` 
 
-
-
+-   toggle coc-file-explorer press `<Space>+ct` 
+-   move cursor down press "j" 
+-   move cursor up press "k"
+-   expan the folder(folder with start by the + sign ) press "gl"
+-   collapse the folder(folder with start by the - sign ) press "gh"
+-   Create new dir press "<Shift>+a"
+-   Create new file press "a"
+-   Rename file and folder press "r"
+-   Copy  file press "yy"
+-   Move file (Cut) to another folder press "dd"
+-   Paste file press "p"
+-   Delete file press "dF"
+-   Show hidden file press "g."
+-   Toggle on/of hidden file in node press "zh"
 
 
 
 ## what I've done? OR What I have learn
+
+
+
+
+##  Date 18 Feb 2021 
+
+>   Just install neovim and get some config follow nick's and use his config
+>   (well ,just a little bit cofig it on my own) using color scheme "jellybeans"
+   
+
+
 
 
 

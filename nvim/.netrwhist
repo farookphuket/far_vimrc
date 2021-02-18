@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/srv/http/lav8.lap'
+let g:netrw_dirhist_1='/srv/http/lav8.lap/DB'
+let g:netrw_dirhist_0='/srv/http/lav8.lap'
+let g:netrw_dirhist_9='/srv/http'
+let g:netrw_dirhist_8='/srv/http/lav8.lap'
+let g:netrw_dirhist_7='/home/farook/.vim'
+let g:netrw_dirhist_6='/srv/http/lav8.lap'
+let g:netrw_dirhist_5='/srv/http/lav8.lap/DB'
+let g:netrw_dirhist_4='/srv/http/lav8.lap'
+let g:netrw_dirhist_3='/srv/http/lav8.lap/app'
