@@ -56,6 +56,13 @@
 
 
 
+#   Manjaro Only ! easy install 
+
+>   if you use manjaro so 
+>   open the terminal type `cd ~/far_vimrc ` hit enter 
+>   type `run_copy.sh` enter the password bang! you're done!
+
+
 
 
 
