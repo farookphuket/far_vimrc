@@ -36,7 +36,7 @@
 #   Any way!
 
 
-> before you will say "Dude I got an Error your code|config is not working"
+>   before you will say "Dude I got an Error your code|config is not working"
 >   and I will say to you "Dude, I don't know,
 >   it is working very well on mine ,
 >   I don't know what is in your system
@@ -139,7 +139,7 @@ real quick it's will open coc-explorer to close it press <space-ct> again)
 
 ### 31 Jan 2021 if your ranger NOT image preview
 
->   if you fireup ranger and you find out that the image is NOT preview
+>   if you fire-up ranger and you find out that the image is NOT preview
 >   make sure you do have "w3m" install because image preview need it 
 >   on manjaro simply type `sudo pacman -S w3m ` now you're set
 
