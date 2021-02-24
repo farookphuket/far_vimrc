@@ -122,7 +122,7 @@ vmap <C-y> "+y
 nnoremap <leader>pp "+p 
 
 nnoremap <leader>cr :CocRestart
-
+nnoremap <leader>ct :CocCommand explorer --toggle<CR>
 
 " show the buffers list
 nnoremap <Leader>ll :ls<CR>
@@ -140,6 +140,15 @@ nnoremap <Leader>sp :sp<CR>
 
 " open fzf file finder
 nnoremap <Leader>pf :Files<CR>
+
+" new tab 
+nnoremap <Leader>tt :tabnew<CR>
+
+" next tab
+nnoremap <Leader>tn :tabnext<CR>
+
+" previous tab
+nnoremap <Leader>tp :tabprev<CR>
 
 
 " move visually select lines up or down

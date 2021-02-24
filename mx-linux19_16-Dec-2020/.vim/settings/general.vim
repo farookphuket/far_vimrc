@@ -81,6 +81,7 @@ set hlsearch
 " When I close a tab, remove the buffer
 set nohidden
 
+set showtabline=2
 
 set noswapfile
  
@@ -99,6 +100,13 @@ set undofile
  " delays and poor user experience.
  
  set updatetime=50
+
+
+
+" Better tabbing
+vnoremap < <gv
+vnoremap > >gv
+
 
 
 "Status line gnarliness
@@ -138,7 +146,7 @@ if executable('rg')
      
 endif
      
-                                                                                                                
+                    
      
 let loaded_matchparen = 1
 
@@ -153,17 +161,14 @@ let mapleader = " "
 
 
 
-"ly$O#{{{ "lpjjj_%A#}}}jjzajj
 
-"}}}
-
-"{{{Taglist configuration
+"Taglist configuration
 let Tlist_Use_Right_Window = 1
 let Tlist_Enable_Fold_Column = 0
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Use_SingleClick = 1
 let Tlist_Inc_Winwidth = 0
-"}}}
+
 
 let g:rct_completion_use_fri = 1
 "let g:Tex_DefaultTargetFormat = "pdf"
