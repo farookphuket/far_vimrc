@@ -8,6 +8,11 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "   let not use YouCompleteMe this time
 "Plug 'ycm-core/YouCompleteMe'
 
+
+" SuperTap 14-Sep-2019
+Plug 'ervandew/supertab'
+
+
 Plug 'tweekmonster/gofmt.vim'
 
 Plug 'tpope/vim-fugitive'

@@ -5,10 +5,14 @@
 #   copy the config file
 #   ranger config
 cp -r ranger ~/.config/
-cp -r poweline ~/.config
+cp -r powerline ~/.config
 
 #   rename .vim folder just incase something wrong we can go back
-mv ~/.vim ~/.vim.old
+if [[ -d ~/.vim ]] && [[ -n `ls -A ~/.vim` ]]; then 
+    # 
+    mv ~/.vim ~/.vim.old
+    cp -r .vim ~/
+fi
 cp -r .vim ~/
 
 #   rename and copy the ccnfig file

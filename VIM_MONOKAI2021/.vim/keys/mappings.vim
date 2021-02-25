@@ -141,6 +141,14 @@ nnoremap <Leader>sp :sp<CR>
 " open fzf file finder
 nnoremap <Leader>pf :Files<CR>
 
+
+" TAB in general mode will move to text buffer
+nnoremap <TAB> :bnext<CR>
+" SHIFT-TAB will go back
+nnoremap <S-TAB> :bprevious<CR>
+
+
+
 " new tab 
 nnoremap <Leader>tt :tabnew<CR>
 
