@@ -4,9 +4,8 @@
 USER_NAME=$USER
 TODAY=$(date +"%Y-%m-%d_at_%H:%M:%S")
 
-mkdir ~/Documents/$USER_NAME_vim_old
-
-BACKUP_PATH=~/Documents/$USER_NAME_vim_old
+mkdir ~/Documents/vim_old
+BACKUP_PATH=~/Documents/vim_old
 
 if [[ -d ~/.vim ]] && [[ -n `ls -A ~/.vim` ]]; then
     # backup if user has his config 
@@ -29,7 +28,7 @@ cp -r powerline ~/.config
 # check if exit file 
 if [[ -f ~/.bashrc ]]; then
     # backup .bashrc 
-    mv ~/.bashrc $BACKUP_PATH/.bashrc_$TODAY
+    mv ~/.bashrc $BACKUP_PATH/.bashrc_old_$TODAY
 fi
 cp .bashrc ~/
 
