@@ -63,6 +63,25 @@
 
 
 
+#   Date 25 Feb 2021 
+
+> change folder "mx-linux19_16-Dec-2020" to "VIM_MONOKAI2021" 
+> to copy this config 
+
+``` 
+    cd VIM_MONOKAI2021 
+    ./run_copy.sh 
+
+```
+> now run `vim .` then `:PlugInstall` hit enter then `:q` to quit re-open 
+> now hit <space>cr hit enter 
+> to install coc-explorer type `:CocInstall coc-explorer` hit enter 
+> that's all you have to do 
+> test on "manjaro "
+
+
+
+
 
 
 -   do you have gvim install?
