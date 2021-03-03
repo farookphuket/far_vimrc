@@ -141,14 +141,6 @@ nnoremap <Leader>sp :sp<CR>
 " open fzf file finder
 nnoremap <Leader>pf :Files<CR>
 
-
-" TAB in general mode will move to text buffer
-nnoremap <TAB> :bnext<CR>
-" SHIFT-TAB will go back
-nnoremap <S-TAB> :bprevious<CR>
-
-
-
 " new tab 
 nnoremap <Leader>tt :tabnew<CR>
 
@@ -173,3 +165,10 @@ map <leader>t :Lexplore<CR>
 inoremap jj <Esc>
 
 nnoremap JJJJ <Nop>
+
+
+
+" Map the <Space> key to toggle a selected fold opened/closed.
+" Last edit 3 Mar 2021
+ nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
+ vnoremap <Space> zf

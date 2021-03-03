@@ -21,32 +21,9 @@ if [[ -d ~/.vim ]] && [[ -n `la -A ~/.vim` ]]; then
 
     # copy .vim dir to the backup path eg: ~/Desktop/user-name
     mv ~/.vim $BACKUP_PATH/.vim_old_$TODAY 
-    cp -r COPY_FOR_VIM/.vim ~/ 
 fi
-
-<<<<<<< HEAD
-echo "copy vim config"
-
-if [[ -d ~/.vim ]] && [[ -n `ls -A ~/.vim` ]]; then
-    # found the .vim make the backup 
-    mv ~/.vim ~/.vim.old
-
-    # copy this config
-    cp -r COPY_FOR_VIM/.vim ~/ 
-fi 
 cp -r COPY_FOR_VIM/.vim ~/ 
 
-=======
-# if no .vim will copy .vim dir to HOME
-cp -r COPY_FOR_VIM/.vim ~/ 
-
-if [[ -f "$OLD_VIMRC" ]]; then
-    # if found the .vimrc file then move it to user backup folder
-    mv ~/.vimrc $BACKUP_PATH/.vimrc_old_$TODAY
-fi
-# copy the .vimrc file to HOME 
->>>>>>> b86fec4f68b8df1db7c4dd0df9880467bd2b7aae
-cp COPY_FOR_VIM/.vimrc ~/
 
 
 if [[-f "$OLD_BASH"]]; then 
