@@ -12,6 +12,10 @@ Plug 'tweekmonster/gofmt.vim'
 
 Plug 'tpope/vim-fugitive'
 
+
+" SuperTap 14-Sep-2019
+Plug 'ervandew/supertab'
+
 Plug 'vim-utils/vim-man'
 
 Plug 'mbbill/undotree'
