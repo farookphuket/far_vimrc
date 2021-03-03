@@ -17,7 +17,7 @@ cp -r .vim ~/
 if [[ -d ~/.config/nvim ]] && [[ -n `ls -A ~/.config/nvim ` ]]; then
     mv ~/.config/nvim $BACKUP_PATH/nvim_old_$TODAY
 fi
-
+cp -r ../nvim ~/.config/ 
 
 
 cp -r ranger ~/.config/
