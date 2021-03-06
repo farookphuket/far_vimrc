@@ -17,7 +17,7 @@ BACKUP_PATH=~/Documents/$USER_BACKUP_DIR
 
 mkdir ~/Documents/$USER_BACKUP_DIR  
 
-if [[ -d ~/.vim ]] && [[ -n `la -A ~/.vim` ]]; then 
+if [[ -d ~/.vim ]] && [[ -n `ls -A ~/.vim` ]]; then 
 
     # copy .vim dir to the backup path eg: ~/Desktop/user-name
     mv ~/.vim $BACKUP_PATH/.vim_old_$TODAY 
