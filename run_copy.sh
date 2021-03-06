@@ -4,12 +4,11 @@
 
 # this will copy the config file 
 echo "----------------------Warning!-----------------"
-echo "this will copy the config of vim and nvim to $HOME "
-echo " last update 25 Feb 2021 "
+echo "this will copy the config of vim  to $HOME "
+echo " will copy nvim config into $HOME/.config "
+echo " last update 6 Mar 2021 "
 echo "-----------------------------------"
-OLD_VIMRC=~/.vimrc 
-OLD_TMUX=~/.tmux.conf 
-OLD_BASH=~/.bashrc 
+
 TODAY=$(date +"%Y-%M-%d_at_%H:%M:%S")
 USER_NAME=$USER
 USER_BACKUP_DIR=$USER_NAME_old_vim_config_$TODAY
@@ -26,14 +25,19 @@ cp -r COPY_FOR_VIM/.vim ~/
 
 
 
-if [[ -f "$OLD_BASH"]]; then 
+if [[ -f ~/.bashrc ]]; then 
     # backup .bashrc to ~/Documents 
     mv ~/.bashrc $BACKUP_PATH/.bashrc_old_$TODAY
 fi
 cp COPY_FOR_VIM/.bashrc ~/
 
+if [[ -f ~/.vimrc ]]; then
+    mv ~/.vimrc $BACKUP_PATH/.vimrc_old_$TODAY
+fi
+cp COPY_FOR_VIM/.vimrc ~/
 
-if [[ -f "$OLD_TMUX" ]]; then 
+
+if [[ -f ~/.tmux.conf ]]; then 
     # backup .tmux.conf 
     mv ~/.tmux.conf $BACKUP_PATH/.tmux.conf_old_$TODAY
 fi
