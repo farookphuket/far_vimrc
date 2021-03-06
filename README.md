@@ -63,6 +63,18 @@
 
 
 
+## Manjaro easy setup!
+
+
+
+[![](http://img.youtube.com/vi/3kBCS6IEVjw/0.jpg)](http://www.youtube.com/watch?v=3kBCS6IEVjw "")
+
+
+
+
+
+
+
 #   Date 25 Feb 2021 
 
 > change folder "mx-linux19_16-Dec-2020" to "VIM_MONOKAI2021" 
