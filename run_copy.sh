@@ -26,7 +26,7 @@ cp -r COPY_FOR_VIM/.vim ~/
 
 
 
-if [[-f "$OLD_BASH"]]; then 
+if [[ -f "$OLD_BASH"]]; then 
     # backup .bashrc to ~/Documents 
     mv ~/.bashrc $BACKUP_PATH/.bashrc_old_$TODAY
 fi
