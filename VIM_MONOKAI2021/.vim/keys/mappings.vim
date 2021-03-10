@@ -172,3 +172,7 @@ nnoremap JJJJ <Nop>
 " Last edit 3 Mar 2021
  nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
  vnoremap <Space> zf
+
+
+
+

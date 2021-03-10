@@ -185,3 +185,9 @@ let g:netrw_browse_split = 4
 let g:netrw_banner = 0
 
 let g:netrw_winsize = 22
+
+
+
+"   copy the setup from this page 19-Feb-2021
+"   https://medium.com/vim-drops/be-a-html-ninja-with-emmet-for-vim-feee15447ef1
+let g:user_emmet_leader_key=','
