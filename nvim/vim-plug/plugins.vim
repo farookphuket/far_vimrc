@@ -34,6 +34,15 @@ Plug 'mattn/emmet-vim'
 Plug 'nanotech/jellybeans.vim'
 
 
+" post install (yarn install | npm install) then load plugin only for editing supported files
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+" this plugin will not working unless you have run 
+" 'npm install -g prettier'  or 'sudo npm install -g prettier ' in manjaro
+
+
+
+
+
 call plug#end()
 
 
