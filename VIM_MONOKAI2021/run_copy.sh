@@ -9,9 +9,18 @@ BACKUP_PATH=~/Documents/vim_old
 
 if [[ -d ~/.vim ]] && [[ -n `ls -A ~/.vim` ]]; then
     # backup if user has his config 
-    mv ~/.vim $BACKUP_PATH/.vim_old_$TODAY 
+    mv ~/.vim $BACKUP_PATH 
 fi
+
+# copy the .vim config dir to ~/
 cp -r .vim ~/
+
+# make plugin dir for vim-prettier
+mkdir -p ~/.vim/pack/plugins/start
+
+# clone it content into it dir
+git clone https://github.com/prettier/vim-prettier ~/.vim/pack/plugins/start/vim-prettier
+
 
 
 if [[ -d ~/.config/nvim ]] && [[ -n `ls -A ~/.config/nvim ` ]]; then

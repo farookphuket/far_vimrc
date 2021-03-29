@@ -66,6 +66,13 @@ Plug 'plasticboy/vim-markdown'
 Plug 'mattn/emmet-vim'
 
 
+" post install (yarn install | npm install) then load plugin only for editing supported files
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+" this plugin will not working unless you have run 
+" 'npm install -g prettier'  or 'sudo npm install -g prettier ' in manjaro
+
+
+
 
 "call vundle#end() " required
 call plug#end()
