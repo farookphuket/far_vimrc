@@ -99,6 +99,10 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
+
+
+
+
 # some more ls aliases
 alias ll='ls -la'
 alias la='ls -A'
