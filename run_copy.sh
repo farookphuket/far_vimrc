@@ -19,10 +19,16 @@ mkdir ~/Documents/$USER_BACKUP_DIR
 if [[ -d ~/.vim ]] && [[ -n `ls -A ~/.vim` ]]; then 
 
     # copy .vim dir to the backup path eg: ~/Desktop/user-name
-    mv ~/.vim $BACKUP_PATH/.vim_old_$TODAY 
+    mv ~/.vim $BACKUP_PATH 
 fi
 cp -r COPY_FOR_VIM/.vim ~/ 
 
+
+# make plugin dir for vim-prettier
+mkdir -p ~/.vim/pack/plugins/start
+
+# clone it content into it dir
+git clone https://github.com/prettier/vim-prettier ~/.vim/pack/plugins/start/vim-prettier
 
 
 if [[ -f ~/.bashrc ]]; then 
@@ -51,7 +57,7 @@ cp -r powerline ~/.config
 # check if the use has current config of nvim
 if [[ -d ~/.config/nvim ]] && [[ -n `ls -A ~/.config/nvim` ]]; then 
     # move the old config to the backup dir
-    mv ~/.config/nvim $BACKUP_PATH/nvim_old_$TODAY 
+    mv ~/.config/nvim $BACKUP_PATH 
 
 fi
 cp -r nvim ~/.config/ 

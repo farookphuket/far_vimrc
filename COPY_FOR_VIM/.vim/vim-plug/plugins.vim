@@ -76,7 +76,10 @@ Plug 'mattn/emmet-vim'
 " auto pair
 Plug 'jiangmiao/auto-pairs'
 
-
+" post install (yarn install | npm install) then load plugin only for editing supported files
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+" this plugin will not working unless you have run 
+" 'npm install -g prettier'  or 'sudo npm install -g prettier ' in manjaro
 
 
 
