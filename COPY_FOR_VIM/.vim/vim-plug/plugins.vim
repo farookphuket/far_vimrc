@@ -85,3 +85,8 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
 call plug#end()
 
+
+
+colorscheme gruvbox
+set background=dark
+
