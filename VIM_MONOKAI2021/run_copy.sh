@@ -8,8 +8,8 @@ mkdir ~/Documents/vim_old
 BACKUP_PATH=~/Documents/vim_old
 
 if [[ -d ~/.vim ]] && [[ -n `ls -A ~/.vim` ]]; then
-    # backup if user has his config 
-    mv ~/.vim $BACKUP_PATH 
+    # backup if user has his config
+    mv ~/.vim $BACKUP_PATH
 fi
 
 # copy the .vim config dir to ~/
@@ -26,7 +26,7 @@ git clone https://github.com/prettier/vim-prettier ~/.vim/pack/plugins/start/vim
 if [[ -d ~/.config/nvim ]] && [[ -n `ls -A ~/.config/nvim ` ]]; then
     mv ~/.config/nvim $BACKUP_PATH/nvim_old_$TODAY
 fi
-cp -r ../nvim ~/.config/ 
+cp -r ../nvim ~/.config/
 
 
 cp -r ranger ~/.config/
@@ -34,9 +34,9 @@ cp -r powerline ~/.config
 
 
 
-# check if exit file 
+# check if exit file
 if [[ -f ~/.bashrc ]]; then
-    # backup .bashrc 
+    # backup .bashrc
     mv ~/.bashrc $BACKUP_PATH/.bashrc_old_$TODAY
 fi
 cp .bashrc ~/
@@ -48,7 +48,7 @@ fi
 cp .vimrc ~/
 
 if [[ -f ~/.tmux.conf ]]; then
-    mv ~/.tmux.conf $BACKUP_PATH/.tmux.conf_old_$TODAY 
+    mv ~/.tmux.conf $BACKUP_PATH/.tmux.conf_old_$TODAY
 fi
 cp .tmux.conf ~/
 
@@ -58,7 +58,7 @@ cp .tmux.conf ~/
 echo "-------------Install require package ---------------"
 echo " your config has been copied "
 echo " This will install the require package "
-sudo -s ./run_install.sh  
+sudo -s ./run_install.sh
 
 sleep 5s
 

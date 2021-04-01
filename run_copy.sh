@@ -9,12 +9,13 @@ echo " will copy nvim config into $HOME/.config "
 echo " last update 6 Mar 2021 "
 echo "-----------------------------------"
 
+
+mkdir -p ~/Documents/vim_backup  
+
 TODAY=$(date +"%Y-%M-%d_at_%H:%M:%S")
 USER_NAME=$USER
-USER_BACKUP_DIR=$USER_NAME_old_vim_config_$TODAY
-BACKUP_PATH=~/Documents/$USER_BACKUP_DIR 
+BACKUP_PATH=~/Documents/vim_backup 
 
-mkdir ~/Documents/$USER_BACKUP_DIR  
 
 if [[ -d ~/.vim ]] && [[ -n `ls -A ~/.vim` ]]; then 
 
