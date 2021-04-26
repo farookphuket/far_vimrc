@@ -54,6 +54,61 @@
 
 
 
+
+---
+
+#   Ubuntu Easy setup 26 Apr 2021
+
+> this test has done on Ubuntu 21.04(through Virtualbox ) Ubuntu 20.04 my 
+> work desk the script is working fine with no problem 
+
+
+> run the file setup.sh to install the require program 
+
+```
+    ./setup.sh 
+
+```
+
+> this will do all the work for you !please note that after the process done 
+> your machine will reboot 
+
+
+
+## still need some config 
+
+> after your machine up open your terminal then run vim .
+> this will throw error at the first start all you have to do is type 
+> `:PlugUpdate` you will need to install 'coc-explorer' after your plugin has 
+> loaded by hit 'space+cr hit enter' the coc will be restart 
+> now type `CocInstall coc-explorer` if this process has fail (most of the time 
+> will be fail) so you may have to update your npm by type `sudo npm update` 
+> npm will show what is the update version 
+> (look like  : Run npm install -g npm@7.11.1 to update) now you can type 
+> `sudo npm install -g npm@7.11.1 ` this will update npm for you 
+> now open terminal then run `vim .` follow by `:CocInstall coc-explorer` 
+> you may have to run this command a few time (at least in my experience)
+
+
+> when the install has done now you will be able to press "space+ct" to open 
+> coc-explorer
+
+ 
+
+
+
+
+
+## still something for Ubuntu that I cannot fix! 
+
+> the loco in terminal I cannot fix that but I will try hard for that 
+
+
+
+
+
+---
+
 #   Manjaro Only ! easy install 
 
 >   if you use manjaro so 
