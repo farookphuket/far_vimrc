@@ -15,7 +15,7 @@ chsh -s /usr/bin/zsh
 
 
 
-echo "============== Dear $USER your machine will restart now "
+echo "============== Dear $USER please reboot your system"
 
 sleep 5s 
 
