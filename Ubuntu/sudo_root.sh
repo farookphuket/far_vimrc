@@ -16,8 +16,8 @@ apt install zsh-theme-powerlevel9k -yy
 
 
 
-
+# make change on 26-Aug-2022 
 # copy the themem
 
-cp -r ../zsh/zsh /usr/share/
-cp -r ../zsh/zsh-theme-powerlevel10k /usr/share/
+# cp -r ../zsh/zsh /usr/share/
+# cp -r ../zsh/zsh-theme-powerlevel10k /usr/share/

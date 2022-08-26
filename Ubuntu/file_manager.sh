@@ -12,7 +12,6 @@ cp -r ../powerline ~/.config
 
 cp -r ../nvim ~/.config 
 
-# zsh
 
-cp  ../zsh/.zshrc ~/
-
+# change on 26-Aug-2022
+# remove zsh dir from this repo then will copy from gitlab instead

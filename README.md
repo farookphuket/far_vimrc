@@ -1,5 +1,10 @@
 # My .vimrc .tmux.conf .bashrc
 
+> my "dot file" that I(Farook) has been use on the year 2022 
+
+> this repo is will be focus on vim (and neovim but for me I am using vim 
+> more than neovim) 
+
 
 
 

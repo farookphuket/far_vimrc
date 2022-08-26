@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/farook/far-taluy-jon/FILES/year_2022'
+let g:netrw_dirhist_0='/home/farook/far-taluy-jon/FILES'
+let g:netrw_dirhist_9='/home/farook/far-taluy-jon'
+let g:netrw_dirhist_8='/srv/http/see.next/client/components/layout'
+let g:netrw_dirhist_7='/srv/http/see.next/client/components'
+let g:netrw_dirhist_6='/srv/http/see.next/client'
+let g:netrw_dirhist_5='/srv/http/see.next'
+let g:netrw_dirhist_4='/home/farook/.config/dwm/conky'
+let g:netrw_dirhist_3='/home/farook/.config/dwm/scripts'
+let g:netrw_dirhist_2='/home/farook/.config/dwm'
