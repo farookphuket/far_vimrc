@@ -28,6 +28,12 @@ Plug 'airblade/vim-gitgutter'
 Plug 'nanotech/jellybeans.vim'
 
 
+" icon plugin on 30 aug 2022 not work
+"Plug 'ryanoasis/vim-devicons'
+
+" color highlight
+Plug 'chrisbra/Colorizer'
+
 " show status line
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -62,6 +68,8 @@ let g:coc_global_extensions = [
   \ 'coc-tsserver'
   \ ]
 
+" for tailwindcss 1 sep 2022
+Plug 'yaegassy/coc-tailwindcss3', {'do': 'yarn install --frozen-lockfile'}
 
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
